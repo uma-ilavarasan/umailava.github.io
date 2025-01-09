@@ -1,8 +1,9 @@
+/* General body styling */
 body {
-  background-color: #FFFFFF; /* White */
+  background-color: #FFF7F5; /* Light Cream */
   padding: 50px;
   font: 14px/1.5 "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
-  color: #000000; /* Black for normal body text */
+  color: #2D2D2D; /* Dark Charcoal for normal body text */
   font-weight: 400;
 }
 
@@ -12,97 +13,91 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p, ul, ol, table, pre, dl {
-  color: #000000; /* Black for normal text */
+  color: #2D2D2D; /* Dark Charcoal for normal text */
   margin: 0 0 20px;
 }
 
-h1, h2, h3 {
-  line-height: 1.1;
-}
-
-h1 {
-  font-size: 28px;
-  font-weight: 500;
-}
-
-h2 {
-  color: #D35C37; /* Terracotta */
-  font-weight: 500;
-}
-
-h3, h4, h5, h6 {
-  color: #494949;
-  font-weight: 500;
-}
-
 a {
-  color: #228B8D; /* Muted Teal */
+  color: #E55B3C; /* Warm Orange for links */
   text-decoration: none;
 }
 
 a:hover {
-  color: #D35C37; /* Terracotta */
+  color: #D35C37; /* Deep Terracotta for hover */
 }
 
 a small {
   font-size: 11px;
-  color: #777;
+  color: #C76B6B; /* Muted Rose for small text links */
   margin-top: -0.3em;
   display: block;
 }
 
 a:hover small {
-  color: #777;
-}
-
-.wrapper {
-  width: 860px;
-  margin: 0 auto;
-}
-
-blockquote {
-  border-left: 1px solid #D9A021; /* Golden Yellow */
-  margin: 0;
-  padding: 0 0 0 20px;
-  font-style: italic;
+  color: #D35C37; /* Deep Terracotta */
 }
 
 pre {
   padding: 8px 15px;
-  background: #F8F8F8; /* Light Gray */
+  background: #FFF7F5; /* Light Cream for subtle contrast */
   border-radius: 5px;
-  border: 1px solid #E5E5E5;
+  border: 1px solid #C76B6B; /* Muted Rose */
   overflow-x: auto;
 }
 
 code {
   font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
-  color: #333333; /* Dark Gray */
+  color: #B22222; /* Main Accent */
 }
 
+blockquote {
+  border-left: 4px solid #D35C37; /* Deep Terracotta */
+  margin: 0;
+  padding: 0 0 0 20px;
+  font-style: italic;
+}
+
+/* Table styling */
 table {
   width: 100%;
   border-collapse: collapse;
+  background: #FFF7F5; /* Light Cream */
 }
 
 th, td {
   text-align: left;
   padding: 5px 10px;
-  border-bottom: 1px solid #E5E5E5;
-}
-
-dt {
-  color: #183A59; /* Dark Blue */
-  font-weight: 500;
+  border-bottom: 1px solid #C76B6B; /* Muted Rose */
 }
 
 th {
-  color: #183A59; /* Dark Blue */
+  color: #B22222; /* Main Accent */
+  font-weight: bold;
 }
 
-img {
-  max-width: 100%;
+dt {
+  color: #B22222; /* Main Accent */
+  font-weight: bold;
 }
 
+/* Section Styling */
 header {
-  width: 270px
+  width: 270px;
+  float: left;
+  position: fixed;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+section {
+  width: 500px;
+  float: right;
+  padding-bottom: 50px;
+}
+
+footer {
+  width: 270px;
+  float: left;
+  position: fixed;
+  bottom: 50px;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
