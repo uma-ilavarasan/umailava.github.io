@@ -80,20 +80,28 @@ dt {
   font-weight: bold;
 }
 
-/* Section Styling */
+/* Wrapper Styling */
+.wrapper {
+  width: 860px; /* Ensures enough space for header and section */
+  margin: 0 auto;
+}
+
+/* Header Styling */
 header {
   width: 270px;
-  float: left;
-  position: fixed;
+  float: left; /* Ensures side-by-side layout */
+  position: relative; /* Change to 'fixed' if desired */
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
+/* Section Styling */
 section {
-  width: 500px;
-  float: right;
+  width: 500px; /* Adjusted for remaining space in .wrapper */
+  float: right; /* Ensures side-by-side layout */
   padding-bottom: 50px;
 }
 
+/* Footer Styling */
 footer {
   width: 270px;
   float: left;
@@ -101,3 +109,21 @@ footer {
   bottom: 50px;
   -webkit-font-smoothing: subpixel-antialiased;
 }
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 960px) {
+  header, section, footer {
+    float: none; /* Stack elements */
+    width: auto; /* Expand to full width */
+  }
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    padding: 20px;
+  }
+  .wrapper {
+    width: auto;
+  }
+}
+
