@@ -1,18 +1,18 @@
-/* General body styling */
 body {
-  background-color: #FDF3E7; /* Warm Beige */
+  background-color: #FFFFFF; /* White */
   padding: 50px;
   font: 14px/1.5 "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
-  color: #595959;
+  color: #000000; /* Black for normal body text */
   font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #B22222; /* Main Accent (BrickRed) */
+  color: #B22222; /* Main Accent: BrickRed */
   margin: 0 0 20px;
 }
 
 p, ul, ol, table, pre, dl {
+  color: #000000; /* Black for normal text */
   margin: 0 0 20px;
 }
 
@@ -67,17 +67,17 @@ blockquote {
   font-style: italic;
 }
 
-code, pre {
-  font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
-  color: #333;
-}
-
 pre {
   padding: 8px 15px;
-  background: #F8F8F8;
+  background: #F8F8F8; /* Light Gray */
   border-radius: 5px;
   border: 1px solid #E5E5E5;
   overflow-x: auto;
+}
+
+code {
+  font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
+  color: #333333; /* Dark Gray */
 }
 
 table {
