@@ -123,8 +123,8 @@ section {
 
 /* Footer */
 footer {
-  width: 270px;
-  float: left;
+  width: 100%;
+  float: none;
   position: fixed;
   bottom: 50px;
   -webkit-font-smoothing: subpixel-antialiased;
