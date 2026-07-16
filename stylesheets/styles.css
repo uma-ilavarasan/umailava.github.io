@@ -39,6 +39,24 @@ h3, h4, h5, h6 { font-weight: 500; }
 p, ul, ol, table, pre, dl { margin: 0 0 20px; color: var(--text); }
 small { font-size: 11px; }
 strong { color: var(--text); font-weight: 700; }
+.course-title { font-weight: 400; color: var(--brick-red); }
+
+/* Lists — triangle bullets */
+ul { list-style: none; padding-left: 20px; }
+ul ul { margin: 4px 0 12px; padding-left: 20px; }
+ul > li { position: relative; padding-left: 22px; }
+ul > li::before {
+  content: "\25B6"; /* filled triangle */
+  position: absolute;
+  left: 0;
+  top: 0.2em;
+  font-size: 0.65em;
+  color: var(--brick-red);
+}
+ul ul > li::before {
+  content: "\25B7"; /* outlined triangle */
+  color: var(--midnight-blue);
+}
 
 /* Links */
 a { color: var(--midnight-blue); text-decoration: none; }
