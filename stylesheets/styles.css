@@ -83,10 +83,18 @@ hr { border: 0; background: var(--border-neutral); height: 1px; margin: 0 0 20px
 
 /* Header / Sidebar */
 header {
-  width: 270px;
+  width: 320px;
   float: left;
   position: fixed;
   -webkit-font-smoothing: subpixel-antialiased;
+}
+
+/* Headshot */
+.headshot {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  margin: 10px 0;
 }
 
 /* Header nav */
@@ -96,15 +104,15 @@ header ul {
   padding: 0;
   background: transparent;
   border: none;
-  width: 270px;
+  width: 100%;
+  display: flex;
 }
 header li {
-  width: 89px;
-  float: left;
+  flex: 1 1 0;
+  float: none;
   border-right: none;
   height: 32px;
 }
-header ul li + li + li { width: 89px; }
 
 header ul a {
   line-height: 1;
@@ -126,7 +134,7 @@ header ul a:active { color: var(--brick-red-dark); border-bottom-color: var(--br
 
 /* Main section */
 section {
-  width: 500px;
+  width: 460px;
   float: right;
   padding-bottom: 50px;
 }
@@ -144,7 +152,7 @@ footer { width: 100%; float: none; position: static; margin-top: 20px; line-heig
 @media print, screen and (max-width: 960px) {
   .wrapper { width: auto; margin: 0; }
   header, section, footer { float: none; position: static; width: auto; }
-  header { padding-right: 320px; }
+  header { padding-right: 370px; }
   section {
     border: 1px solid var(--border-neutral);
     border-width: 1px 0;
@@ -167,7 +175,6 @@ footer { width: 100%; float: none; position: static; margin-top: 20px; line-heig
 @media print, screen and (max-width: 480px) {
   body { padding: 15px; }
   header ul { width: 99%; }
-  header li, header ul li + li + li { width: 33%; }
 }
 
 @media print {
