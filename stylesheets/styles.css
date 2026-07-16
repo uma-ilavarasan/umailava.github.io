@@ -18,7 +18,7 @@
 body {
   background-color: var(--cream-bg);
   padding: 50px;
-  font: 14px/1.5 "Times New Roman", Times, serif;
+  font: 18px/1.5 "Times New Roman", Times, serif;
   color: var(--text);
   font-weight: 400;
 }
