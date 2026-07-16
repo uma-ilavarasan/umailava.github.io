@@ -32,7 +32,7 @@ h1, h2, h3 { line-height: 1.1; }
 h1 { font-size: 28px; font-weight: 500; }
 header h1 { margin-top: -6px; font-weight: 700; margin-bottom: 0; }
 header .subtitle { margin-top: 20.64px; margin-bottom: 0; }
-h2 { font-weight: 500; }
+h2 { font-size: 17px; font-weight: 700; color: var(--midnight-blue); text-align: center; }
 h3, h4, h5, h6 { font-weight: 500; }
 
 /* Text blocks */
@@ -169,8 +169,9 @@ footer { width: 100%; float: none; position: static; margin-top: 20px; line-heig
 @media print, screen and (max-width: 720px) {
   body { word-wrap: break-word; padding: 20px; }
   .wrapper { width: auto; }
-  header { padding: 0; }
+  header { padding: 0; text-align: center; }
   header ul, header p.view { position: static; }
+  .headshot { margin-left: auto; margin-right: auto; }
   pre, code { word-wrap: normal; }
 }
 
