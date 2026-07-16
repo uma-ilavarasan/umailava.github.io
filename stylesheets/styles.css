@@ -142,11 +142,11 @@ section {
 /* Footer */
 footer { width: 100%; float: none; position: static; margin-top: 20px; line-height: 1.2; text-align: left; color: var(--midnight-blue); /* Muted footer text */ }
 
-/* Top navigation bar */
-.topnav { background-color: var(--brick-red); margin-bottom: 20px; border-radius: 6px; overflow: hidden; display: flex; align-items: center; justify-content: space-between; /* or space-evenly */ gap: 0; }
-.topnav a { /* evenly divide the bar into 4 equal tabs */ flex: 1 1 25%; display: flex; align-items: center; justify-content: center; color: var(--cream-bg); text-decoration: none; font-size: 17px; padding: 14px 0; }
-.topnav a:hover { background-color: var(--midnight-blue); color: #ffffff; }
-.topnav a.active { background-color: var(--brick-red-dark); color: #ffffff; }
+/* Top navigation bar — booktabs style */
+.topnav { background-color: transparent; margin-bottom: 20px; border-top: 1px solid var(--midnight-blue); border-bottom: 1px solid var(--midnight-blue); display: flex; align-items: center; justify-content: space-between; gap: 0; }
+.topnav a { /* evenly divide the bar into 4 equal tabs */ flex: 1 1 25%; display: flex; align-items: center; justify-content: center; color: var(--brick-red); font-weight: 700; text-decoration: none; font-size: 17px; padding: 14px 0; }
+.topnav a:hover { color: var(--brick-red-dark); }
+.topnav a.active { color: var(--brick-red-dark); }
 
 /* Responsive adaptations */
 @media print, screen and (max-width: 960px) {
