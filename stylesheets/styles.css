@@ -18,7 +18,7 @@
 body {
   background-color: var(--cream-bg);
   padding: 50px;
-  font: 16px/1.15 "Times New Roman", Times, serif;
+  font: 15px/1.15 "Times New Roman", Times, serif;
   color: var(--text);
   font-weight: 400;
 }
@@ -92,22 +92,19 @@ header {
 /* Header nav */
 header ul {
   list-style: none;
-  height: 40px;
+  height: 32px;
   padding: 0;
-  background: var(--cream-panel);
-  border-radius: 5px;
-  border: 1px solid var(--border-neutral);
+  background: transparent;
+  border: none;
   width: 270px;
 }
 header li {
   width: 89px;
   float: left;
-  border-right: 1px solid var(--border-neutral);
-  height: 40px;
+  border-right: none;
+  height: 32px;
 }
-header ul li + li + li { border-right: none; width: 89px; }
-header li:first-child a { border-radius: 5px 0 0 5px; }
-header li:last-child a { border-radius: 0 5px 5px 0; }
+header ul li + li + li { width: 89px; }
 
 header ul a {
   line-height: 1;
@@ -116,15 +113,16 @@ header ul a {
   display: block;
   text-align: center;
   padding-top: 6px;
-  height: 34px;
+  height: 26px;
+  border-bottom: 1px solid transparent;
 }
 header ul a strong {
   font-size: 14px;
   display: block;
   color: var(--brick-red);
 }
-header ul a:hover { color: var(--brick-red); }
-header ul a:active { background-color: var(--midnight-blue-tint); }
+header ul a:hover { color: var(--brick-red); border-bottom-color: var(--brick-red); }
+header ul a:active { color: var(--brick-red-dark); border-bottom-color: var(--brick-red-dark); }
 
 /* Main section */
 section {
