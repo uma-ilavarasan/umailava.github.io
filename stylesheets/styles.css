@@ -96,7 +96,7 @@ header {
   width: 100%;
   max-width: 260px;
   height: auto;
-  margin: -8.59px 0 10px;
+  margin: 15px 0 10px;
 }
 
 /* Header nav */
@@ -142,7 +142,7 @@ section {
 }
 
 /* Footer */
-footer { width: 100%; float: none; position: static; margin-top: 20px; line-height: 1.2; text-align: left; color: var(--midnight-blue); /* Muted footer text */ }
+footer { width: 100%; float: none; position: static; margin-top: 20px; line-height: 1.2; text-align: left; color: var(--text); }
 
 /* Top navigation bar — booktabs style */
 .topnav { background-color: transparent; margin-bottom: 20px; border-top: 1px solid var(--midnight-blue); border-bottom: 1px solid var(--midnight-blue); display: flex; align-items: center; justify-content: space-between; gap: 0; }
@@ -195,4 +195,4 @@ footer p,
 footer li { margin-bottom: 8px; }
 footer p:last-child,
 footer li:last-child { margin-bottom: 0; }
-footer small { line-height: 1.1; color: var(--midnight-blue); }
+footer small { line-height: 1.1; color: var(--text); }
