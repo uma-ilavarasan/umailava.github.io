@@ -116,6 +116,17 @@ header {
   margin: 15px 0 10px;
 }
 
+/* Email icon */
+.email-icon {
+  display: inline-block;
+  font-size: 22px;
+  line-height: 1;
+  color: var(--midnight-blue);
+  text-decoration: none;
+  margin: 0 0 10px;
+}
+.email-icon:hover { color: var(--brick-red); }
+
 /* Header nav */
 header ul {
   list-style: none;
