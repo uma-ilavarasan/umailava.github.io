@@ -36,7 +36,7 @@ h2 { font-size: 17px; font-weight: 700; color: var(--midnight-blue); text-align:
 h3, h4, h5, h6 { font-weight: 500; }
 
 /* Text blocks */
-p, ul, ol, table, pre, dl { margin: 0 0 20px; color: var(--text); }
+p, ul, ol, table, pre, dl { margin: 0 0 8px; color: var(--text); }
 small { font-size: 11px; }
 strong { color: var(--text); font-weight: 700; }
 .course-title { font-weight: 400; color: var(--brick-red); }
@@ -46,7 +46,7 @@ ul { list-style: none; padding-left: 20px; }
 ul ul { margin: 4px 0 12px; padding-left: 20px; }
 ul > li { position: relative; padding-left: 22px; }
 ul > li::before {
-  content: "\25B6"; /* filled triangle */
+  content: "\25B7\FE0E"; /* outlined triangle; \FE0E forces text glyph, not emoji, on mobile */
   position: absolute;
   left: 0;
   top: 0.2em;
@@ -54,7 +54,6 @@ ul > li::before {
   color: var(--brick-red);
 }
 ul ul > li::before {
-  content: "\25B7"; /* outlined triangle */
   color: var(--midnight-blue);
 }
 
