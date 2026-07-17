@@ -12,6 +12,8 @@
   --brick-red: #B6321C;     /* xcolor BrickRed */
   --brick-red-dark: #8A2415; /* Deeper shade of BrickRed, for active states */
   --midnight-blue-tint: #E3F0F5;
+  --text-light: #595959;        /* Lighter black, for footer text */
+  --midnight-blue-light: #66A4BF; /* Lighter blue, for footer links */
 }
 
 /* Base / Body */
@@ -119,7 +121,7 @@ header {
 /* Email icon */
 .email-icon {
   display: inline-block;
-  font-size: 22px;
+  font-size: 40px;
   line-height: 1;
   color: var(--midnight-blue);
   text-decoration: none;
@@ -170,7 +172,8 @@ section {
 }
 
 /* Footer */
-footer { width: 100%; float: none; position: static; margin-top: 20px; line-height: 1.2; text-align: left; color: var(--text); }
+footer { width: 100%; float: none; position: static; margin-top: 20px; line-height: 1.2; text-align: left; color: var(--text-light); }
+footer a { color: var(--midnight-blue-light); }
 
 /* Top navigation bar — booktabs style */
 .topnav { background-color: transparent; margin-bottom: 20px; border-top: 1px solid var(--midnight-blue); border-bottom: 1px solid var(--midnight-blue); display: flex; align-items: center; justify-content: space-between; gap: 0; }
@@ -224,4 +227,4 @@ footer p,
 footer li { margin-bottom: 8px; }
 footer p:last-child,
 footer li:last-child { margin-bottom: 0; }
-footer small { line-height: 1.1; color: var(--text); }
+footer small { line-height: 1.1; color: var(--text-light); }
