@@ -49,7 +49,7 @@ h3, h4, h5, h6 { font-weight: 500; }
 p, ul, ol, table, pre, dl { margin: 0 0 10px; color: var(--text); }
 small { font-size: 11px; }
 strong { color: var(--text); font-weight: 700; }
-.title { font-weight: 400; color: var(--brick-red); }
+.information { color: var(--text-light); }
 
 /* Lists — triangle bullets */
 ul { list-style: none; padding-left: 20px; }
@@ -69,7 +69,7 @@ ul ul > li::before {
 
 /* Numbered list (e.g., publications) */
 ol { padding-left: 24px; }
-ol > li::marker { color: var(--text); font-weight: 700; }
+ol > li::marker { color: var(--brick-red); font-weight: 700; }
 ol > li { margin-bottom: 12px; }
 
 /* Abstract disclosure toggle */
