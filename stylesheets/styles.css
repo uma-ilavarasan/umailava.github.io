@@ -67,6 +67,33 @@ ul ul > li::before {
   color: var(--midnight-blue);
 }
 
+/* Numbered list (e.g., publications) */
+ol { padding-left: 24px; }
+ol > li::marker { color: var(--brick-red); font-weight: 700; }
+ol > li { margin-bottom: 12px; }
+
+/* Abstract disclosure toggle */
+ol details { margin: 4px 0 0 22px; }
+ol details summary {
+  list-style: none;
+  cursor: pointer;
+  display: inline-block;
+  color: var(--midnight-blue);
+}
+ol details summary::-webkit-details-marker { display: none; }
+ol details summary::before {
+  content: "\25B7\FE0E"; /* outlined triangle; \FE0E forces text glyph, not emoji, on mobile */
+  display: inline-block;
+  width: 1em;
+  color: var(--midnight-blue);
+  margin-right: 4px;
+  transition: transform 0.15s ease;
+}
+ol details[open] summary::before { transform: rotate(90deg); }
+ol details summary:hover,
+ol details summary:hover::before { color: var(--brick-red); }
+ol details p { margin: 6px 0 0 22px; }
+
 /* Links */
 a { color: var(--midnight-blue); text-decoration: none; }
 a:hover { color: var(--brick-red); }
@@ -80,7 +107,7 @@ code, pre {
 }
 code { color: var(--brick-red); }
 pre {
-  padding: 10px 15px;
+  padding: 8px 15px;
   background: var(--cream-panel);
   border-radius: 5px;
   border: 1px solid var(--border-neutral);
@@ -234,7 +261,7 @@ footer a { color: var(--midnight-blue-light); }
 /* Footer spacing tweaks */
 footer { line-height: 1.2; }
 footer p,
-footer li { margin-bottom: 10px; }
+footer li { margin-bottom: 8px; }
 footer p:last-child,
 footer li:last-child { margin-bottom: 0; }
 footer small { line-height: 1.1; color: var(--text-light); }
