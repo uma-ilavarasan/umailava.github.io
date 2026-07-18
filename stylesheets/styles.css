@@ -28,7 +28,7 @@ body {
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   color: var(--brick-red);
-  margin: 0 0 8px;
+  margin: 0 0 10px;
 }
 h1, h2, h3 { line-height: 1.1; }
 h1 { font-size: 28px; font-weight: 500; }
@@ -46,7 +46,7 @@ h2 { font-size: 17px; font-weight: 700; color: var(--midnight-blue); text-align:
 h3, h4, h5, h6 { font-weight: 500; }
 
 /* Text blocks */
-p, ul, ol, table, pre, dl { margin: 0 0 8px; color: var(--text); }
+p, ul, ol, table, pre, dl { margin: 0 0 10px; color: var(--text); }
 small { font-size: 11px; }
 strong { color: var(--text); font-weight: 700; }
 .course-title { font-weight: 400; color: var(--brick-red); }
@@ -80,7 +80,7 @@ code, pre {
 }
 code { color: var(--brick-red); }
 pre {
-  padding: 8px 15px;
+  padding: 10px 15px;
   background: var(--cream-panel);
   border-radius: 5px;
   border: 1px solid var(--border-neutral);
@@ -234,7 +234,7 @@ footer a { color: var(--midnight-blue-light); }
 /* Footer spacing tweaks */
 footer { line-height: 1.2; }
 footer p,
-footer li { margin-bottom: 8px; }
+footer li { margin-bottom: 10px; }
 footer p:last-child,
 footer li:last-child { margin-bottom: 0; }
 footer small { line-height: 1.1; color: var(--text-light); }
