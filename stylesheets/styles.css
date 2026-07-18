@@ -69,7 +69,7 @@ ul ul > li::before {
 
 /* Numbered list (e.g., publications) */
 ol { padding-left: 24px; }
-ol > li::marker { color: var(--brick-red); font-weight: 700; }
+ol > li::marker { color: var(--text); font-weight: 700; }
 ol > li { margin-bottom: 12px; }
 
 /* Abstract disclosure toggle */
