@@ -12,7 +12,7 @@
   --brick-red: #B6321C;     /* xcolor BrickRed */
   --brick-red-dark: #8A2415; /* Deeper shade of BrickRed, for active states */
   --midnight-blue-tint: #E3F0F5;
-  --text-light: #595959;        /* Lighter black, for footer text */
+  --text-light: #808080;        /* Lighter black, for footer text and .information */
   --midnight-blue-light: #66A4BF; /* Lighter blue, for footer links */
 }
 
